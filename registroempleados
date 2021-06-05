@@ -30,15 +30,15 @@ static int nocturnidad2;
 	public int getSalario2() {
 		return salario2;
 	}
-	public int setSalario() {
-		this.salario=salario;
-		return salario;
-	}
-	public int setSalario2() {
-		this.salario2=salario2;
-		return salario2;
+	
+	public static void setSalario(int salario) {
+		salarioempleados.salario = salario;
 	}
 	
+	public static void setSalario2(int salario2) {
+		salarioempleados.salario2 = salario2;
+	}
+
 
 	public static void main(String[] args) {
 		
@@ -63,18 +63,7 @@ static int nocturnidad2;
 		System.out.println("Nombre trabajador 2= "+trabajador2.getNombre2());
 		System.out.println("Salario mensual de trabajador 2= "+trabajador2.getSalario2());
 		System.out.println("__________FIN DE REGISTRO___________");
-	}
-	public static void setNombre(String nombre) {
-		salarioempleados.nombre = nombre;
-	}
-	public static void setSalario(int salario) {
-		salarioempleados.salario = salario;
-	}
-	public static void setNombre2(String nombre2) {
-		salarioempleados.nombre2 = nombre2;
-	}
-	public static void setSalario2(int salario2) {
-		salarioempleados.salario2 = salario2;
-	}
 
+	}
 }
+	
