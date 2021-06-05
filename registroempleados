@@ -1,0 +1,80 @@
+package metodosverano;
+
+public class salarioempleados {
+private static String nombre;
+private static int salario;
+private static String nombre2;
+private static int salario2;
+static int nocturnidad1;
+static int nocturnidad2;
+	
+	public salarioempleados(String nombre, int salario) {
+	// constructor trabajador 1
+		this.nombre=nombre;
+		this.salario=salario;
+	}
+	public salarioempleados() {
+		// constructor trabajador 2
+			this.nombre2=nombre2;
+			this.salario2=salario2;
+		}
+	public String getNombre() {
+		return nombre;
+	}
+	public int getSalario() {
+		return salario;
+	}
+	public String getNombre2() {
+		return nombre2;
+	}
+	public int getSalario2() {
+		return salario2;
+	}
+	public int setSalario() {
+		this.salario=salario;
+		return salario;
+	}
+	public int setSalario2() {
+		this.salario2=salario2;
+		return salario2;
+	}
+	
+
+	public static void main(String[] args) {
+		
+		// Objeto
+		salarioempleados trabajador1=new salarioempleados(nombre, salario);
+		salarioempleados trabajador2=new salarioempleados(nombre2, salario2);
+		trabajador1.nombre="Pepe";
+		trabajador1.salario=1000;
+		
+		trabajador2.nombre2="Antonio";
+		trabajador2.salario2=2000;
+		
+		trabajador1.setSalario(1100);
+		trabajador2.setSalario2(2100);
+		
+		System.out.println("__________FICHA DE EMPLEADOS_________");
+		System.out.println("____________TRABAJADOR 1_____________");
+		System.out.println("Nombre trabajador 1= "+trabajador1.getNombre());
+		System.out.println("Salario mensual de trabajador 1= "+trabajador1.getSalario());
+		
+		System.out.println("____________TRABAJADOR 2_____________");
+		System.out.println("Nombre trabajador 2= "+trabajador2.getNombre2());
+		System.out.println("Salario mensual de trabajador 2= "+trabajador2.getSalario2());
+		System.out.println("__________FIN DE REGISTRO___________");
+	}
+	public static void setNombre(String nombre) {
+		salarioempleados.nombre = nombre;
+	}
+	public static void setSalario(int salario) {
+		salarioempleados.salario = salario;
+	}
+	public static void setNombre2(String nombre2) {
+		salarioempleados.nombre2 = nombre2;
+	}
+	public static void setSalario2(int salario2) {
+		salarioempleados.salario2 = salario2;
+	}
+
+}
